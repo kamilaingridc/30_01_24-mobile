@@ -4,8 +4,14 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.acima}>
+        <Text style={styles.texto}>Senai</Text>
+        <StatusBar style="auto" />
+      </View>
+      <View style={styles.abaixo}>
+        <Text style={styles.texto}>Bosch</Text>
+        <StatusBar style="auto" />
+      </View>
     </View>
   );
 }
@@ -13,8 +19,26 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ff0084',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
+  acima:{
+    backgroundColor: '#fff',
+    flex: 0.4,
+    width:'90%',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  abaixo:{
+    backgroundColor: '#ffc0dc',
+    flex: 0.5,
+    width: '90%',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  texto:{
+    fontWeight: 'bold',
+    fontSize: 30
+  }
 });
